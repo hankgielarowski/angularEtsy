@@ -2,10 +2,10 @@
   <h1>Listings</h1>
 </div>
 
+<input type="text" name="name" ng-model="search">
 
-
-<div ng-repeat="listing in listings" class="">
-  {{listing.listing_id}}
+<div ng-repeat="listing in listings | filter:search" class="">
+  <!-- {{listing.listing_id}} -->
   <p>
     price: {{listing.price}}
   </p>
