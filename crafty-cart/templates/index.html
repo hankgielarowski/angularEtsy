@@ -1,0 +1,21 @@
+<div class="row">
+  <h1>Listings</h1>
+</div>
+
+
+
+<div ng-repeat="listing in listings" class="">
+  {{listing.listing_id}}
+  <p>
+    price: {{listing.price}}
+  </p>
+  <p>
+     Title: {{listing.title}} |
+  </p>
+   <img src="{{listing.MainImage.url_75x75}}" alt="" />
+   <a  href="/#/details/{{listing.listing_id}}" role="button"><button class="btn-btn-success btn-lg">Get Info</button></a>
+   <button class="btn-btn-success btn-lg" ng-click="addToCart(listing)" name="button">Add To Cart</button>
+    <a  href="/#/shoppingCart" ><button class="btn-btn-success btn-lg"name="button">Get Me Now</button></a>
+  <br>
+  <hr>
+</div>

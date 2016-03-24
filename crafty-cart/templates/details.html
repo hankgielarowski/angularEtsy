@@ -1,0 +1,10 @@
+<!-- {{ product | json}} -->
+<div class="details">
+
+
+<p>{{product.description}}</p>
+<img src="{{product.MainImage.url_170x135}}"/>
+</div>
+<a href="/#/" name="button"><button class="btn-btn-success btn-lg">Get Back</button></a>
+<a href="/#/shoppingCart" name="button"><button class="btn-btn-success btn-lg">Shopping Cart</button></a>
+ <button class="btn-btn-success btn-lg" ng-click="addToCart(product)" name="button">Add To Cart</button>
